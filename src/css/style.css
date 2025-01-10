@@ -1,31 +1,28 @@
-html {
-    font-size: 62.5%;
+:root {
+    --color: #ffffff;
+    --background-color: #5BC241;
 }
 
-body {
+html {
+    font-size: 62.5%;
     font-family: "Public Sans", serif;
-    font-weight: 400;
 }
 
 .header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 50px 45px;
+    align-items: center;
+    padding: 30px;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 
 .logo h1{
-    font-size: 2rem;
-    margin-left: 5px;
-}
-
-.logo img{
-    margin-right: 5px;
+    font-size: 2.5rem;
 }
 
 .menu {
@@ -34,23 +31,25 @@ body {
     font-size: 1.5rem;
 }
 
-.menu li a{
-    padding: 10px 5px;
+.menu li{
     margin-left: 1.5rem;
-    transition: 0.3s ease-in-out;
+}
+
+.menu li a{
+    padding: 10px;
 }
 
 .menu li a:hover {
-    background-color: #5BC241;
-    color: #ffffff;
+    transition: 0.3s ease-in-out;
+    color: var(--color);
+    background-color: var(--background-color);
 }
     
 .menu li a.btn {
-    background-color: #5BC241;
-    border-radius: 1rem;
-    color: #ffffff;
-    margin-left: 2rem;
-    padding: 10px 20px;
-    display: inline-block ;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+    color: var(--color);
+    background-color: var(--background-color);
 }
 
